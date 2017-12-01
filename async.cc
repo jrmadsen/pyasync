@@ -156,7 +156,7 @@ void output_message(int64_t _ncall)
 
     std::stringstream ss;
     ss << "(C++) Function call #" << _ncall << " on thread # "
-       << get_tid() << "(tid: " << std::this_thread::get_id()
+       << tid << " (tid: " << std::this_thread::get_id()
        << "). function: fibonacci(" << (_ncall % fibonacci_max)
        << ")...";
 
